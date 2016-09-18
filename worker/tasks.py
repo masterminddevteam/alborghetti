@@ -15,6 +15,7 @@ def start_routine():
     starbucks_spider()
     outback_spider()
 
+
 def starbucks_spider():
     url = "https://www.starbucks.com.br/card/rewards"
     htmltext = urllib.urlopen(url).read()
@@ -35,6 +36,7 @@ def starbucks_spider():
     else:
         spider_content.updated_on = datetime.now()
         spider_content.save()
+
 
 def outback_spider():
     url = "http://www.outback.com.br/institucional/?uri=faq"
