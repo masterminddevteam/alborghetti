@@ -30,6 +30,7 @@ def starbucks_spider():
        SpiderContent.objects.create(
             name='starbucks',
             updated_on=datetime.now(),
+            category='coffeshop',
             content=body.encode('utf-8'),
             content_length=str(len(body))
         )
@@ -52,6 +53,7 @@ def outback_spider():
     if created:
        SpiderContent.objects.create(
             name='outback',
+            category='restaurante',
             content=semtag,
             content_length=len(semtag)
         )
