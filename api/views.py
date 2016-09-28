@@ -11,8 +11,7 @@ class SpiderCategoryView(APIView):
 
     def get(self, request, category):
 
-        import pdb; pdb.set_trace()
-        queryset = SpiderContent.objects.filter(category=category)[0]
+        queryset = SpiderContent.objects.filter(category=category).last()
     	serializer_class = SpiderSerializer(queryset)
 
         return Response(serializer_class.data)
