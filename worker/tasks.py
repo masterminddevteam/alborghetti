@@ -14,6 +14,7 @@ import re
 def start_routine():
     starbucks_spider()
     outback_spider()
+    secrett_spider()
 
 
 def starbucks_spider():
@@ -55,6 +56,30 @@ def outback_spider():
             name='outback',
             category='restaurante',
             content=semtag,
+            content_length=len(semtag)
+        )
+    else:
+        spider_content.updated_on = datetime.now()
+        spider_content.save()
+
+def secrett_spider():
+    url = "http://secrett.com.br/aniversarios/"
+    htmltext = urllib.urlopen(url).read()
+    soup = BeautifulSoup(htmltext)
+    txt1 = ""
+    cont = ""
+    txt1 = soup.findAll('div', {'class' : 'wpb_wrapper'})[1]
+    regex = re.compile(r'<[^<]*?>')
+    semtag = regex.sub('', str(txt1))
+    cont = len(semtag)
+
+    spider_content, created = \
+    SpiderContent.objects.get_or_create(name='secrett')
+    if created:
+        SpiderContent.objects.create(
+            name='secrett',
+            content=semtag,
+            category='balada'
             content_length=len(semtag)
         )
     else:
