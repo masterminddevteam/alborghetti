@@ -1,8 +1,10 @@
 amqp==1.4.9
 anyjson==0.3.3
 appnope==0.1.0
+Babel==2.3.4
 backports-abc==0.4
 backports.shutil-get-terminal-size==1.0.0
+backports.ssl-match-hostname==3.5.0.1
 beautifulsoup4==4.5.1
 billiard==3.3.0.23
 boto==2.42.0
@@ -15,6 +17,7 @@ click==6.6
 configparser==3.5.0
 contextlib2==0.5.4
 coverage==4.2
+crontab==0.21.3
 dateutils==0.6.6
 decorator==4.0.10
 Django==1.9.9
@@ -39,6 +42,7 @@ fancycompleter==0.5
 filechunkio==1.8
 flake8==3.0.4
 Flask==0.11.1
+flower==0.9.1
 funcsigs==1.0.2
 futures==3.0.5
 gunicorn==19.6.0
@@ -74,7 +78,6 @@ oauthlib==1.1.2
 ordereddict==1.1
 pathlib2==2.1.0
 pbr==1.10.0
-pdbpp==0.8.3
 pexpect==4.2.0
 pickleshare==0.7.3
 Pillow==3.3.1
@@ -104,10 +107,9 @@ simplegeneric==0.8.1
 simplejson==3.8.2
 singledispatch==3.4.0.3
 six==1.10.0
-tornado==4.4.1
+tornado==4.2
 tqdm==4.8.4
 traitlets==4.2.2
-unroll==0.1.0
 vcrpy==1.10.0
 waitress==0.9.0
 wcwidth==0.1.7

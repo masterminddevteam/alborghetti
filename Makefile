@@ -35,7 +35,7 @@ run:
 	@python manage.py runserver 0.0.0.0:8000
 
 run-celery:
-	celery -A alborghetti worker -l info
+	celery -A alborghetti worker -B -l info
 
 install:
 	@pip install -r requirements/requirements.txt
