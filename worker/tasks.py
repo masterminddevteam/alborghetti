@@ -79,7 +79,7 @@ def secrett_spider():
         SpiderContent.objects.create(
             name='secrett',
             content=semtag,
-            category='balada'
+            category='balada',
             content_length=len(semtag)
         )
     else:
