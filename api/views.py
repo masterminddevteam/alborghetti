@@ -12,7 +12,7 @@ class SpiderCategoryView(APIView):
     def get(self, request, category):
 
         queryset = SpiderContent.objects.filter(category=category)
-    	serializer = SpiderSerializer(queryset, many=True)
+        serializer = SpiderSerializer(queryset, many=True)
         return Response(serializer.data)
 
 
@@ -21,5 +21,5 @@ class SpiderDetailView(APIView):
     def get(self, request, pk):
 
         queryset = SpiderContent.objects.filter(pk=pk).last()
-    	serializer = SpiderSerializer(queryset)
+        serializer = SpiderSerializer(queryset)
         return Response(serializer.data)
