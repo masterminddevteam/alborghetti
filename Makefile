@@ -38,7 +38,7 @@ run-celery:
 	celery -A alborghetti worker -B -l info
 
 install:
-	@pip install -r requirements/requirements.txt
+	@pip install -r requirements.txt
 
 check:
 	@flake8 --show-source .

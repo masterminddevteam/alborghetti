@@ -46,6 +46,7 @@ flower==0.9.1
 funcsigs==1.0.2
 futures==3.0.5
 gunicorn==19.6.0
+heroku==0.1.4
 hiredis==0.2.0
 httpretty==0.8.10
 imageio==1.5
@@ -78,6 +79,7 @@ oauthlib==1.1.2
 ordereddict==1.1
 pathlib2==2.1.0
 pbr==1.10.0
+pdbpp==0.8.3
 pexpect==4.2.0
 pickleshare==0.7.3
 Pillow==3.3.1
@@ -93,7 +95,7 @@ pyslack-real==0.6.0
 pytest==3.0.0
 pytest-cov==2.3.1
 pytest-django==3.0.0
-python-dateutil==2.5.3
+python-dateutil==1.5
 pytz==2016.6.1
 PyYAML==3.11
 ramos==0.0.3
@@ -110,6 +112,7 @@ six==1.10.0
 tornado==4.2
 tqdm==4.8.4
 traitlets==4.2.2
+unroll==0.1.0
 vcrpy==1.10.0
 waitress==0.9.0
 wcwidth==0.1.7
